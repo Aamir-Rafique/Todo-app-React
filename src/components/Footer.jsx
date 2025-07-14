@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className=" w-full text-sm text-center absolute bottom-0 bg-gradient-to-r from-[#2545d4] to-[#6412b6] text-white text-[0.9rem]">    
+        <footer className=" w-full text-sm text-center relative pb-7 bottom-0 bg-gradient-to-r from-[#2545d4] to-[#6412b6] text-white text-[0.9rem]">    
             <p>
                 Made with ❤️ by <a href="https://github.com/Aamir-Rafique" target="_blank" rel="noopener"
                     className="text-[#29acd4] hover:underline">Aamir Rafique</a>
