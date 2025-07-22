@@ -103,10 +103,10 @@ const Main = () => {
                 </div>)}
 
                 <div className="tasks flex px-[1rem] ">
-                    <ul className="p-0 list-none  w-full" >
+                    <ul className="p-0 list-none  w-[98%]" >
                         {filteredTodos.map((todo) => (
                             <li key={todo.id} className={(todo.completed) ? "p-1 line-through text-gray-600 flex justify-between mt-2 bg-[#49f36bac] rounded-[4px]" : " p-1 flex justify-between mt-2 bg-[#b16bfb82] rounded-[4px]"} >
-                                <div className="taskWithId flex gap-2.5 items-center">
+                                <div className="w-[76%]  taskWithId flex justify-between items-center " >
                                     <input
                                         type="checkbox"
                                         checked={todo.completed}
@@ -114,7 +114,9 @@ const Main = () => {
                                         className="h-3.5 w-3.5"
                                         title={(todo.completed) ? "Unmark" : "Mark as done"}
                                     />
-                                    <p className="truncate w-75 text-left text-[1.3rem]" >{todo.text}</p><small>  {todo.date}</small>
+                                    <div className="flex items-center justify-between  w-[95%] ">
+                                        <p className="truncate  text-left text-[1.3rem]" >{todo.text}</p><small>  {todo.date}</small>
+                                    </div>
                                 </div>
                                 <div className="modify-tasks flex gap-[2rem] mr-4">
                                     <button className=' cursor-pointer text-white hover:text-blue-700  duration-200' title="Edit Todo" onClick={() => editTodo(todo.id)}><FontAwesomeIcon icon={faPenToSquare} /></button>
