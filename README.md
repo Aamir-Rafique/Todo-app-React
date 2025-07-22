@@ -1,12 +1,110 @@
-# React + Vite
+# 📝 React To-Do List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and interactive To-Do List application built using **React** and **Tailwind CSS**, with persistent storage via **localStorage**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- ✅ Add new tasks
+- 🗑️ Delete tasks
+- ✏️ Edit existing tasks
+- ✔️ Mark tasks as completed
+- 📂 Filter tasks (All / Completed)
+- 📅 Show current date and day
+- 💾 Save tasks in localStorage (persistent on refresh)
+- 📱 Responsive design with Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Preview
+
+![App Screenshot](./screenshot.png) <!-- Optional: add screenshot of your app -->
+
+---
+
+## 🧑‍💻 Tech Stack
+
+- React (via `create-react-app`)
+- Tailwind CSS
+- JavaScript (ES6+)
+- LocalStorage for data persistence
+
+---
+
+## 🚀 Getting Started
+
+### 📦 Prerequisites
+
+- Node.js installed (v14 or above)
+- npm or yarn
+
+### 🛠️ Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Aamir-Rafique/Todo-app-React
+
+# 2. Navigate into the folder
+cd Todo-app-React
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm start
+# 📝 React To-Do List App
+
+A responsive and interactive To-Do List application built using **React** and **Tailwind CSS**, with persistent storage via **localStorage**.
+
+---
+
+## ✨ Features
+
+- ✅ Add new tasks
+- 🗑️ Delete tasks
+- ✏️ Edit existing tasks
+- ✔️ Mark tasks as completed
+- 📂 Filter tasks (All / Completed)
+- 📅 Show current date and day
+- 💾 Save tasks in localStorage (persistent on refresh)
+- 📱 Responsive design with Tailwind CSS
+
+---
+
+# 📸 Preview
+
+# ![App Screenshot](./screenshot.png) <!-- Optional: add screenshot of your app -->
+
+# ---
+
+## 🧑‍💻 Tech Stack
+
+- React (via `create-react-app`)
+- Tailwind CSS
+- JavaScript (ES6+)
+- LocalStorage for data persistence
+
+---
+
+## 🚀 Getting Started
+
+### 📦 Prerequisites
+
+- Node.js installed (v14 or above)
+- npm 
+
+### 🛠️ Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Aamir-Rafique/Todo-app-React
+
+# 2. Navigate into the folder
+cd Todo-app-React
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm start
