@@ -84,16 +84,16 @@ const Main = () => {
         <div className='w-full py-[3rem] flex justify-center' >
 
             <div className="container w-[50%] px-[2rem] py-[1rem] bg-[#536ee4ac] rounded-md flex flex-col justify-center gap-[1rem] ">
-                <p className="text-white" >📅 {currentDay} </p>
+                <p className="text-white " >📅 {currentDay} </p>
 
                 <form className="add-tasks   flex justify-evenly p-[1rem]" onSubmit={addTodo} >
                     <input type="text"
                         value={task}
                         onChange={handleChange}
                         placeholder='Enter task here'
-                        className='w-[70%] text-center p-[0.5rem] text-2xl bg-white/70 outline-none focus:ring-2   ring-blue-800 transition-all duration-200 rounded-[8px]' />
+                        className='w-[70%] text-center p-[0.5rem] text-2xl bg-white/70 outline-none focus:ring-2   ring-blue-800  duration-200 rounded-[8px]' />
 
-                    <button className='rounded-[8px] px-[2rem] py-[0.5rem] text-[1.3rem] cursor-pointer bg-purple-600 text-white hover:bg-purple-700' type='submit' > {editId ? "Update" : "Add"} </button>
+                    <button className='rounded-[8px] px-[2rem] py-[0.5rem] text-[1.3rem] cursor-pointer bg-purple-600 text-white hover:bg-purple-700  duration-200' type='submit' > {editId ? "Update" : "Add"} </button>
                 </form>
 
                 {/* only show these filter buttons when the any task is marked completed for the first time */}
