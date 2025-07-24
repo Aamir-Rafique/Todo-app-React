@@ -96,7 +96,7 @@ const Main = () => {
                 </form>
 
                 {/* only show these filter buttons when the any task is marked completed for the first time */}
-                {todos.some(todo => todo.completed) && (<div className="flex px-6 md:px-6 gap-2 md:gap-4 mt-0.5">
+                {todos.some(todo => todo.completed) && (<div className="flex px-6 md:px-6 gap-3 md:gap-4 mt-0.5 ">
                     <button onClick={() => setFilter("all")} className="px-2 py-1 text-[0.7rem] md:text-[0.9rem] bg-blue-500 text-white  rounded-lg shadow hover:bg-blue-600 active:bg-blue-600 transition-all duration-150">Show All</button>
                     <button onClick={() => setFilter("completed")} className="px-2 py-1 text-[0.7rem] md:text-[0.9rem] bg-green-500 text-white rounded-lg shadow hover:bg-green-600  active:bg-green-600  transition-all duration-150">Completed</button>
                 </div>)}
@@ -114,7 +114,7 @@ const Main = () => {
                                         title={(todo.completed) ? "Unmark" : "Mark as done"}
                                     />
                                     <div className="flex items-center justify-between ml-1  w-[95%] ">
-                                        <p className="truncate  text-left text-[1rem] md:text-[1.3rem]" >{todo.text}</p><small className="text-[0.7rem]  md:text-[0.85rem]" >{todo.date}</small>
+                                        <p className="truncate  text-left text-[0.9rem] md:text-[1.3rem]" >{todo.text}</p><small className="text-[0.7rem]  md:text-[0.85rem]" >{todo.date}</small>
                                     </div>
                                 </div>
                                 <div className="modify-tasks flex gap-[1.2rem] md:gap-[2rem] mr-2 md:mr-4">
