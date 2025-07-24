@@ -119,8 +119,8 @@ const Main = () => {
                                     </div>
                                 </div>
                                 <div className="modify-tasks flex gap-[2rem] mr-4">
-                                    <button className=' cursor-pointer text-white hover:text-blue-700  duration-200' title="Edit Todo" onClick={() => editTodo(todo.id)}><FontAwesomeIcon icon={faPenToSquare} /></button>
-                                    <button className='cursor-pointer text-white hover:text-red-500 duration-200' title="Delete Todo" onClick={() => deleteTodo(todo.id)}><FontAwesomeIcon icon={faTrash} /></button>
+                                    <button className=' cursor-pointer text-blue-50 hover:text-blue-700  duration-200' title="Edit Todo" onClick={() => editTodo(todo.id)}><FontAwesomeIcon icon={faPenToSquare} /></button>
+                                    <button className='cursor-pointer text-red-50 hover:text-red-500 duration-200' title="Delete Todo" onClick={() => deleteTodo(todo.id)}><FontAwesomeIcon icon={faTrash} /></button>
                                 </div>
                             </li>
                         ))}
