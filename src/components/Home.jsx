@@ -97,8 +97,8 @@ const Main = () => {
 
                 {/* only show these filter buttons when the any task is marked completed for the first time */}
                 {todos.some(todo => todo.completed) && (<div className="flex px-6 md:px-6 gap-3 md:gap-4 mt-0.5 ">
-                    <button onClick={() => setFilter("all")} className="px-2 py-1 text-[0.7rem] md:text-[0.9rem] bg-blue-500 text-white  rounded-lg shadow hover:bg-blue-600 active:bg-blue-600 transition-all duration-150">Show All</button>
-                    <button onClick={() => setFilter("completed")} className="px-2 py-1 text-[0.7rem] md:text-[0.9rem] bg-green-500 text-white rounded-lg shadow hover:bg-green-600  active:bg-green-600  transition-all duration-150">Completed</button>
+                    <button onClick={() => setFilter("all")} className="px-2 py-1 text-[0.7rem] md:text-[0.9rem]             bg-[#b16bfbce] text-white rounded-lg shadow hover:bg-purple-400 active:bg-blue-600 transition-all duration-150" >Show All</button>
+                    <button onClick={() => setFilter("completed")} className="px-2 py-1 text-[0.7rem] md:text-[0.9rem] bg-[#49f36be9] text-white rounded-lg shadow hover:bg-green-400  active:bg-green-400  transition-all duration-150">Completed</button>
                 </div>)}
 
                 <div className="tasks flex px-[0rem] md:px-[1rem] ">
