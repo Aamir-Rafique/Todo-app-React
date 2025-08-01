@@ -93,7 +93,7 @@ const Main = () => {
                         onChange={handleChange}
                         placeholder='Enter task here'
                         className='w-[70%] md:w-[70%]  text-center px-[0.5rem] py-[0.4rem] md:p-[0.5rem] text-[1rem] md:text-[1.4rem] bg-white/70 outline-none focus:ring-2   ring-blue-600  duration-200 rounded-[8px]' />
-                    <button className='rounded-[8px] px-[0.6rem] md:px-[2rem] py-[0.3rem] md:py-[0.5rem] text-[0.9rem] md:text-[1.3rem] cursor-pointer bg-purple-600 text-white hover:bg-purple-700 active:bg-purple-700 duration-150' type='submit' > {editId ? "Update" : "Add"} </button>
+                    <button className='rounded-[8px] px-[0.4rem] md:px-[1rem] py-[0.3rem] md:py-[0.5rem] text-[0.9rem] md:text-[1.2rem] cursor-pointer bg-purple-600 text-white font-bold hover:bg-purple-700 active:bg-purple-700 duration-150' type='submit' > {editId ? "Update" : "Add"} </button>
                 </form>
 
                 {/* only show these filter buttons when the any task is marked completed for the first time */}
@@ -115,7 +115,7 @@ const Main = () => {
                                         title={(todo.completed) ? "Unmark" : "Mark as done"}
                                     />
                                     <div className="flex items-center justify-between  w-[95%] ">
-                                        <p className="truncate text-white text-left text-[0.9rem] md:text-[1.3rem]" >{todo.text}</p><small className="text-[0.7rem]  md:text-[0.85rem] text-yellow-300" >{todo.date}</small>
+                                        <p className="w-[85%] text-white break-words text-left text-[0.9rem] -300 md:text-[1.3rem]" >{todo.text}</p><small className="text-[0.7rem] font-bold  md:text-[0.85rem] text-yellow-300" >{todo.date}</small>
                                     </div>
                                 </div>
                                 <div className="modify-tasks flex gap-[1rem] ml-2 md:gap-[2rem] mr-1 md:mr-4">
