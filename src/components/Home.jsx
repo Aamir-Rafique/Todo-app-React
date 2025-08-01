@@ -113,13 +113,13 @@ const Main = () => {
                                         className="h-3.5 w-3.5"
                                         title={(todo.completed) ? "Unmark" : "Mark as done"}
                                     />
-                                    <div className="flex items-center justify-between ml-1  w-[95%] ">
+                                    <div className="flex items-center justify-between ml-3  w-[95%] ">
                                         <p className="truncate  text-left text-[0.9rem] md:text-[1.3rem]" >{todo.text}</p><small className="text-[0.7rem]  md:text-[0.85rem]" >{todo.date}</small>
                                     </div>
                                 </div>
                                 <div className="modify-tasks flex gap-[1.2rem] md:gap-[2rem] mr-2 md:mr-4">
-                                    <button className=' cursor-pointer text-blue-50 hover:text-blue-700  active:text-blue-700 duration-150' title="Edit Todo" onClick={() => editTodo(todo.id)}><FontAwesomeIcon icon={faPenToSquare} /></button>
-                                    <button className='cursor-pointer text-red-50 hover:text-red-500 active:text-red-500 duration-150' title="Delete Todo" onClick={() => deleteTodo(todo.id)}><FontAwesomeIcon icon={faTrash} /></button>
+                                    <button className=' cursor-pointer text-blue-100 hover:text-blue-700  active:text-blue-700 duration-150' title="Edit Todo" onClick={() => editTodo(todo.id)}><FontAwesomeIcon icon={faPenToSquare} /></button>
+                                    <button className='cursor-pointer text-red-100 hover:text-red-500 active:text-red-500 duration-150' title="Delete Todo" onClick={() => deleteTodo(todo.id)}><FontAwesomeIcon icon={faTrash} /></button>
                                 </div>
                             </li>
                         ))}
