@@ -14,12 +14,13 @@ A responsive and interactive To-Do List application built using **React** and **
 - 📅 Show current date and day
 - 💾 Save tasks in localStorage (persistent on refresh)
 - 📱 Responsive design with Tailwind CSS
+- Lordicons for interactivity
 
 ---
 
 ## 📸 Preview
 
-![App Screenshot](./screenshot.png) <!-- Optional: add screenshot of your app -->
+![App Screenshot](./public/ScreenShot.jpeg) <!-- Optional: add screenshot of your app -->
 
 ---
 
