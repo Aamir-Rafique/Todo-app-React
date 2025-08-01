@@ -38,7 +38,10 @@ const Main = () => {
                     id: Date.now(),
                     text: task,
                     completed: false,
-                    date: new Date().toLocaleDateString(),
+                    date: new Date().toLocaleDateString("en-US", {
+                        month: "short",
+                        day: "numeric",
+                    }),
                 },
             ]);
         }
@@ -84,7 +87,7 @@ const Main = () => {
         <div className='w-full py-[3rem] flex justify-center md:py-[3rem] ' >
 
             <div className="container w-[90%]  md:w-[50%] px-[0.7rem] py-[0.8rem] gap-[0.5rem] bg-[#c38bff89] rounded-md flex flex-col justify-center   md:px-[2rem] md:py-[1rem] md:gap-[1rem]">
-                <p className=" px-6 md:px-6 text-[0.84rem]  md:text-[1rem] " >📅 {currentDay} </p>
+                <p className=" px-6 md:px-6 text-[0.84rem]  md:text-[1rem] text-gray-200 " >📅 {currentDay} </p>
 
                 <form className="flex justify-evenly py-[0.6rem] md:py-[1rem] " onSubmit={addTodo} >
                     <input type="text"
@@ -105,7 +108,7 @@ const Main = () => {
                     <ul className="p-0 list-none  w-[100%] md:w-[98%]" >
                         {filteredTodos.map((todo) => (
                             <li key={todo.id} className={(todo.completed) ? "p-1 line-through text-gray-600 flex justify-between mt-2 bg-[#49f36bac] rounded-[4px]" : " p-1 flex justify-between mt-2 bg-[#b16bfb82] rounded-[4px]"} >
-                                <div className="w-[76%]  flex justify-between items-center" >
+                                <div className="w-[76%]  flex justify-between items-center gap-1.5 md:gap-2" >
                                     <input
                                         type="checkbox"
                                         checked={todo.completed}
@@ -113,13 +116,27 @@ const Main = () => {
                                         className="h-3.5 w-3.5"
                                         title={(todo.completed) ? "Unmark" : "Mark as done"}
                                     />
-                                    <div className="flex items-center justify-between ml-3  w-[95%] ">
-                                        <p className="truncate  text-left text-[0.9rem] md:text-[1.3rem]" >{todo.text}</p><small className="text-[0.7rem]  md:text-[0.85rem]" >{todo.date}</small>
+                                    <div className="flex items-center justify-between  w-[95%] ">
+                                        <p className="truncate text-white text-left text-[0.9rem] md:text-[1.3rem]" >{todo.text}</p><small className="text-[0.7rem]  md:text-[0.85rem] text-yellow-300" >{todo.date}</small>
                                     </div>
                                 </div>
-                                <div className="modify-tasks flex gap-[1.2rem] md:gap-[2rem] mr-2 md:mr-4">
-                                    <button className=' cursor-pointer text-blue-100 hover:text-blue-700  active:text-blue-700 duration-150' title="Edit Todo" onClick={() => editTodo(todo.id)}><FontAwesomeIcon icon={faPenToSquare} /></button>
-                                    <button className='cursor-pointer text-red-100 hover:text-red-500 active:text-red-500 duration-150' title="Delete Todo" onClick={() => deleteTodo(todo.id)}><FontAwesomeIcon icon={faTrash} /></button>
+                                <div className="modify-tasks flex gap-[1rem] ml-2 md:gap-[2rem] mr-1 md:mr-4">
+                                    <button className=' cursor-pointer text-blue-100 hover:text-blue-700  active:text-blue-700 duration-150' title="Edit Todo" onClick={() => editTodo(todo.id)}><lord-icon
+                                        src="https://cdn.lordicon.com/exymduqj.json"
+                                        trigger="hover"
+                                        stroke="bold"
+                                        colors="primary:#ffffff,secondary:#e4e4e4"
+                                        style={{ width: 25, height: 25 }}>
+                                    </lord-icon></button>
+                                    <button className='cursor-pointer text-red-100 hover:text-red-500 active:text-red-500 duration-150' title="Delete Todo" onClick={() => deleteTodo(todo.id)}>
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/jzinekkv.json"
+                                            trigger="hover"
+                                            stroke="bold"
+                                            colors="primary:#ffffff,secondary:#e4e4e4"
+                                            style={{ width: 25, height: 25 }}>
+                                        </lord-icon>
+                                    </button>
                                 </div>
                             </li>
                         ))}
