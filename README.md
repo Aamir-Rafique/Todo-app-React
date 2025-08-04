@@ -1,4 +1,4 @@
-# 📝 React To-Do List App
+# 📝 React Todo App
 
 A responsive and interactive To-Do List application built using **React** and **Tailwind CSS**, with persistent storage via **localStorage**.
 
