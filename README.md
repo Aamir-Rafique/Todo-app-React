@@ -20,7 +20,7 @@ A responsive and interactive To-Do List application built using **React** and **
 
 ## 📸 Preview
 
-![App Screenshot](./public/ScreenShot.webp) <!-- Optional: add screenshot of your app -->
+![App Screenshot](./public/ScreenShot.webp)
 
 ---
 

@@ -95,7 +95,7 @@ const Main = () => {
                         onChange={handleChange}
                         placeholder='Enter task here'
                         className='w-[70%] md:w-[70%]  text-center px-[0.5rem] py-[0.4rem] md:p-[0.5rem] text-[1rem] md:text-[1.4rem] bg-white/70 outline-none focus:ring-2   ring-blue-600  duration-200 rounded-[8px]' />
-                    <button className='rounded-[8px] px-[0.4rem] md:px-[1rem] py-[0.3rem] md:py-[0.5rem] text-[0.9rem] md:text-[1.2rem] cursor-pointer bg-purple-700 text-white font-bold hover:bg-purple-800 hover:ring-2 hover:ring-purple-900 active:ring-2 active:ring-purple-900 active:bg-purple-700 duration-200' type='submit' > {editId ? "Update" : "Add"} </button>
+                    <button className='rounded-[8px] px-[0.4rem] md:px-[1rem] py-[0.3rem] md:py-[0.5rem] text-[0.9rem] md:text-[1.2rem] cursor-pointer bg-purple-700 text-white font-bold hover:bg-purple-8 00 hover:ring-2 hover:ring-purple-900 active:ring-2 active:ring-purple-900 active:bg-purple-700 duration-200' type='submit' > {editId ? "Update" : "Add"} </button>
                 </form>
 
                 {/* only show these filter buttons when the any task is marked completed for the first time */}
